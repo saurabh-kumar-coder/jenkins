@@ -37,7 +37,9 @@ Step 3: Open the jenkins from EC2 IP Address <br>
   ![alt text](image-5.png)
   <br>
   <br>
-  ![alt text](image-6.png)
+  <!-- ![alt text](image-6.png) -->
+
+  ![alt text](image-17.png)
 
 - Click on New Item
   ![alt text](image-7.png)
@@ -98,4 +100,5 @@ Step 9: Integration of jenkins into sonar
 
 ![alt text](image-19.png)
 check the webhook if created or not.
-![alt text](image-18.png)
+
+![alt text](image-12.png)
