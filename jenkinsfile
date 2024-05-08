@@ -8,17 +8,17 @@ pipeline {
     }
 
     stages {
-        stage(${ params.Build }) {
+        stage('Build') {
             steps {
                 sh "echo hello ${params.Build}"
             }
     }
-        stage(${ params.Test }) {
+        stage('Test') {
             steps {
                 sh "echo hello ${params.Test}"
             }
 }
-        stage(${ params.Deploy }) {
+        stage('Deploy') {
             steps {
                 sh "echo hello ${params.Deploy}"
             }
