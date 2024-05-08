@@ -95,6 +95,9 @@ update user password
 
 Step 9: Integration of jenkins into sonar
 ![alt text](image-16.png)
-![alt text](image-17.png)
+
+<!-- ![alt text](image-17.png) -->
+
+![alt text](image-19.png)
 check the webhook if created or not.
 ![alt text](image-18.png)
