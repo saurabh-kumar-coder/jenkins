@@ -1,4 +1,4 @@
-### Jenkins Project 1
+# Jenkins Project 1
 
 This is a simple project to test the Jenkins pipeline using AWS.
 
@@ -50,11 +50,10 @@ Step 3: Open the jenkins from EC2 IP Address <br>
   ![alt text](image-10.png)
 
 Step 4: Adding plugins for sonar and jfrog
-![alt text](image-11.png)
 
-<!-- ![alt text](image-12.png) -->
+- ![alt text](image-11.png)
 
-![alt text](image-13.png)
+- ![alt text](image-13.png)
 
 list of plugins:
 
@@ -65,3 +64,27 @@ list of plugins:
 - quality gates
 - artifactory
 - jfrog
+
+Step 5: install Docker
+
+- repo link : https://github.com/saurabh-kumar-coder/Tools-installation-commands/blob/main/docker.sh
+
+to check if the docker is installed or not use command "docker -v"
+it will give you the docker version if it is intalled.
+demo :
+
+### root@ip-<IP-Address>:/home/ubuntu# docker -v
+
+### Docker version 24.0.2, build cb74dfc
+
+Step 6: install SonarQube
+
+- repo link : https://github.com/saurabh-kumar-coder/Tools-installation-commands/blob/main/sonarqube.sh
+
+Step 7: Open SonarQube by using IP Address and port: 9000 <br>
+demo link: <IP-Address>:9000
+
+Step 8: login into sonarqube dashboard
+user : admin
+password: admin
+![alt text](image-14.png)
