@@ -1,10 +1,9 @@
 # Jenkins Project 1
 
-This is a simple project to test the Jenkins pipeline using AWS.
-***
+## This is a simple project to test the Jenkins pipeline using AWS.
 
 Tools used :
-
+---
 - Jenkins
 - SonarQube
 - Maven
