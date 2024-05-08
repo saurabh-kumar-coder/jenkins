@@ -17,6 +17,7 @@ repo link : https://github.com/saurabh-kumar-coder/Tools-installation-commands/b
 
 Step 3: change security group of the instance:
 adding security group:
+
 ![adding security group](image.png)
 edit inbound rule : 
 ![edit inbound rule](image-1.png)
