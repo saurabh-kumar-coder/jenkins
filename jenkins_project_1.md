@@ -10,14 +10,14 @@ Tools used :
 - Docker
 - Trivy
 
-Step 1: Create a new ubuntu instance in East-US region, with 30gb and t2.medium as configuration.
+**Step 1:** Create a new ubuntu instance in East-US region, with 30gb and t2.medium as configuration.
 connect to instance, and sign-in as root user using command "sudo su".
 
-Step 2: Install Jenkins by taking the command from my git repo: <br>
+**Step 2:** Install Jenkins by taking the command from my git repo: <br>
 
 > repo link : https://github.com/saurabh-kumar-coder/Tools-installation-commands/blob/main/jenkins.sh
 
-Step 3: change security group of the instance: <br>
+**Step 3:** change security group of the instance: <br>
 adding security group:
 
 ![adding security group](image.png)
@@ -26,7 +26,7 @@ edit inbound rule :
 adding inbound rule:
 ![adding inbound rule](image-2.png)
 
-Step 3: Open the jenkins from EC2 IP Address <br>
+**Step 4:** Open the jenkins from EC2 IP Address <br>
 
 - <IP_Address>:8080
 - Get Administrator password using command "cat /var/lib/jenkins/secrets/initialAdminPassword"
@@ -52,7 +52,7 @@ Step 3: Open the jenkins from EC2 IP Address <br>
   <br>
   ![alt text](image-10.png)
 
-Step 4: Adding plugins for sonar and jfrog
+**Step 5:** Adding plugins for sonar and jfrog
 
 ![alt text](image-11.png)
 <br>
@@ -68,7 +68,7 @@ list of plugins:
 - artifactory
 - jfrog
 
-Step 5: install Docker
+**Step 6:** install Docker
 
 > repo link : https://github.com/saurabh-kumar-coder/Tools-installation-commands/blob/main/docker.sh
 
@@ -80,14 +80,14 @@ demo :
 
 ### Docker version 24.0.2, build cb74dfc
 
-Step 6: install SonarQube
+**Step 7:** install SonarQube
 
 > repo link : https://github.com/saurabh-kumar-coder/Tools-installation-commands/blob/main/sonarqube.sh
 
-Step 7: Open SonarQube by using IP Address and port: 9000 <br>
+**Step 8:** Open SonarQube by using IP Address and port: 9000 <br>
 demo link: <IP-Address>:9000
 
-Step 8: login into sonarqube dashboard
+**Step 9:** login into sonarqube dashboard
 user : admin
 password: admin
 ![alt text](image-14.png)
@@ -95,7 +95,7 @@ password: admin
 update user password
 ![alt text](image-15.png)
 
-Step 9: Integration of jenkins into sonar
+**Step 10:** Integration of jenkins into sonar
 ![alt text](image-16.png)
 
 ![alt text](image-19.png)
@@ -107,11 +107,11 @@ check the webhook if created or not.
 
 ### same we have to do with jenkins i.e. when sonar is coming give something
 
-Step 10: install Maven
+**Step 11:** install Maven
 
 > repo link: https://github.com/saurabh-kumar-coder/Tools-installation-commands/blob/main/Maven.sh
 
-Step 11: install Trivy
+**Step 12:** install Trivy
 
 > repo link: https://github.com/saurabh-kumar-coder/Tools-installation-commands/blob/main/trivy.sh
 
@@ -122,9 +122,10 @@ Step 11: Interation of sonar into jenkins
 ![alt text](image-18.png)
 ![alt text](image-20.png)
 
-Step 12: create a Docker hub account.
+**Step 13:** create a Docker hub account.
 <br>
-Step 13: Add docker credentials into jenkins.
+
+**Step 14:** Add docker credentials into jenkins.
 ![alt text](image-21.png)
 ![alt text](image-22.png)
 ![alt text](image-23.png)
@@ -132,12 +133,12 @@ Step 13: Add docker credentials into jenkins.
 ![alt text](image-25.png)
 ![alt text](image-26.png)
 
-Step 14: Add Jenkins Shared Library
+**Step 15:** Add Jenkins Shared Library
 ![alt text](image-27.png)
 ![alt text](image-28.png)
 ![alt text](image-29.png)
 
-Step 15: Go to pipeline in Jenkins
+**Step 16:** Go to pipeline in Jenkins
 ![alt text](image-30.png)
 <br>
 and run build
