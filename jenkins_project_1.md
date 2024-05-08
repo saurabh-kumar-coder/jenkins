@@ -102,3 +102,49 @@ Step 9: Integration of jenkins into sonar
 check the webhook if created or not.
 
 ![alt text](image-12.png)
+
+### Here we told sonarqube if jenkins is coming give something
+
+### same we have to do with jenkins i.e. when sonar is coming give something
+
+Step 10: install Maven
+
+> repo link: https://github.com/saurabh-kumar-coder/Tools-installation-commands/blob/main/Maven.sh
+
+Step 11: install Trivy
+
+> repo link: https://github.com/saurabh-kumar-coder/Tools-installation-commands/blob/main/trivy.sh
+
+So, here Trivy is a DevSecOps tool, the is used to validate images that are made.
+
+Step 11: Interation of sonar into jenkins
+![alt text](image-6.png)
+![alt text](image-18.png)
+![alt text](image-20.png)
+
+Step 12: create a Docker hub account.
+<br>
+Step 13: Add docker credentials into jenkins.
+![alt text](image-21.png)
+![alt text](image-22.png)
+![alt text](image-23.png)
+![alt text](image-24.png)
+![alt text](image-25.png)
+![alt text](image-26.png)
+
+Step 14: Add Jenkins Shared Library
+![alt text](image-27.png)
+![alt text](image-28.png)
+![alt text](image-29.png)
+
+Step 15: Go to pipeline in Jenkins
+![alt text](image-30.png)
+<br>
+and run build
+![alt text](image-31.png)
+the build must fail as we have used the parameters but not given while running the build.
+so, run it with parameters.
+![alt text](image-32.png)
+
+after this you can see the image is running into the docker container
+![alt text](image-33.png)
