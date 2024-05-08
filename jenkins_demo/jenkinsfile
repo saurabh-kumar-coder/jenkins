@@ -1,0 +1,27 @@
+pipeline {
+    agent any
+
+    parameters {
+        string(name: 'build', description: 'it is for building application', defaultValue: 'Build')
+        string(name: 'test', description: 'it is for Testing application', defaultValue: 'Test')
+        string(name: 'deploy', description: 'it is for deploying application', defaultValue: 'Deploy')
+    }
+
+    stages {
+        stage('Build') {
+            steps {
+                sh 'echo hello ${params.build}'
+            }
+        }
+        stage('Test') {
+            steps {
+                sh 'echo hello ${params.test}'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                sh 'echo hello ${params.deploy}'
+            }
+        }
+    }
+}
