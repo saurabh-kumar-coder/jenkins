@@ -28,7 +28,37 @@ adding inbound rule:
 Step 3: Open the jenkins from EC2 IP Address <br>
 
 - <IP_Address>:8080
-- Get Administrator password using command "cat /var/bin"
+- Get Administrator password using command "cat /var/lib/jenkins/secrets/initialAdminPassword"
+  ![alt text](image-3.png)
 - install plugins
+  ![alt text](image-4.png)
 - create user
-- Click on New Item --> Pipeline
+  ![alt text](image-5.png)
+  <br>
+  <br>
+  ![alt text](image-6.png)
+
+- Click on New Item
+  ![alt text](image-7.png)
+
+- create new Pipeline
+  ![alt text](image-8.png)
+
+- configure the pipeline
+  ![alt text](image-9.png)
+  <br>
+  ![alt text](image-10.png)
+
+Step 4: Adding plugins for sonar and jfrog
+![alt text](image-11.png)
+![alt text](image-12.png)
+
+list of plugins:
+
+- sonar gerrit
+- sonarqube scanner
+- sonarqube generic coverage
+- sonar quality gates
+- quality gates
+- artifactory
+- jfrog
