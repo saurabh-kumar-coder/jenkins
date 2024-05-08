@@ -51,7 +51,10 @@ Step 3: Open the jenkins from EC2 IP Address <br>
 
 Step 4: Adding plugins for sonar and jfrog
 ![alt text](image-11.png)
-![alt text](image-12.png)
+
+<!-- ![alt text](image-12.png) -->
+
+![alt text](image-13.png)
 
 list of plugins:
 
