@@ -2,7 +2,12 @@
 
 This is a simple project to test the Jenkins pipeline using AWS.
 
-Tools used : - Jenkins - SonarQube - Maven - Docker - Trivy
+Tools used : 
+- Jenkins
+- SonarQube
+- Maven
+- Docker
+- Trivy
 
 Step 1: Create a new ubuntu instance in East-US region, with 30gb and t2.medium as configuration.
 connect to instance, and sign-in as root user using command "sudo su".
