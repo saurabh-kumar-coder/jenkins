@@ -14,7 +14,7 @@ Step 1: Create a new ubuntu instance in East-US region, with 30gb and t2.medium 
 connect to instance, and sign-in as root user using command "sudo su".
 
 Step 2: Install Jenkins by taking the command from my git repo: <br>
-repo link : https://github.com/saurabh-kumar-coder/Tools-installation-commands/blob/main/jenkins.sh
+> repo link : https://github.com/saurabh-kumar-coder/Tools-installation-commands/blob/main/jenkins.sh
 
 Step 3: change security group of the instance: <br>
 adding security group:
@@ -67,7 +67,7 @@ list of plugins:
 
 Step 5: install Docker
 
-- repo link : https://github.com/saurabh-kumar-coder/Tools-installation-commands/blob/main/docker.sh
+> repo link : https://github.com/saurabh-kumar-coder/Tools-installation-commands/blob/main/docker.sh
 
 to check if the docker is installed or not use command "docker -v"
 it will give you the docker version if it is intalled.
@@ -79,7 +79,7 @@ demo :
 
 Step 6: install SonarQube
 
-- repo link : https://github.com/saurabh-kumar-coder/Tools-installation-commands/blob/main/sonarqube.sh
+> repo link : https://github.com/saurabh-kumar-coder/Tools-installation-commands/blob/main/sonarqube.sh
 
 Step 7: Open SonarQube by using IP Address and port: 9000 <br>
 demo link: <IP-Address>:9000
