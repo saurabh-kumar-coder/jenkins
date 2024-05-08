@@ -14,6 +14,7 @@ Step 1: Create a new ubuntu instance in East-US region, with 30gb and t2.medium 
 connect to instance, and sign-in as root user using command "sudo su".
 
 Step 2: Install Jenkins by taking the command from my git repo: <br>
+
 > repo link : https://github.com/saurabh-kumar-coder/Tools-installation-commands/blob/main/jenkins.sh
 
 Step 3: change security group of the instance: <br>
@@ -51,9 +52,9 @@ Step 3: Open the jenkins from EC2 IP Address <br>
 
 Step 4: Adding plugins for sonar and jfrog
 
-- ![alt text](image-11.png)
-
-- ![alt text](image-13.png)
+![alt text](image-11.png)
+<br>
+![alt text](image-13.png)
 
 list of plugins:
 
@@ -88,3 +89,10 @@ Step 8: login into sonarqube dashboard
 user : admin
 password: admin
 ![alt text](image-14.png)
+
+update user password
+![alt text](image-15.png)
+
+Step 9: Integration of jenkins into sonar
+![alt text](image-16.png)
+![alt text](image-17.png)
