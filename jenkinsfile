@@ -1,14 +1,16 @@
 pipeline {
     agent any
     parameters {
-        string(name: 'Build', description: 'it is for building application', defaultValue: 'Build')
-        string(name: 'Test', description: 'it is for Testing application', defaultValue: 'Test')
-        string(name: 'Deploy', description: 'it is for deploying application', defaultValue: 'Deploy')
+        string(name: 'Build', description: 'it is for building application', defaultValue: 'Building')
+        string(name: 'Test', description: 'it is for Testing application', defaultValue: 'Testing')
+        string(name: 'Deploy', description: 'it is for deploying application', defaultValue: 'Deploying')
+        string(name: 'Branch', description: 'branch name', defaultValue: 'main')
     }
     stages {
         stage('checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/saurabh-kumar-coder/jenkins.git'
+                /* groovylint-disable-next-line GStringExpressionWithinString */
+                git branch: '${params.Branch}', url: 'https://github.com/saurabh-kumar-coder/jenkins.git'
                 sh 'echo("checkout")'
             }
         }
