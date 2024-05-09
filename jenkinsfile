@@ -15,12 +15,6 @@ pipeline {
                 echo('checkout')
             }
         }
-        stage('mvn install') {
-            steps {
-                sh 'mvn install'
-                echo 'this is for mvn install'
-            }
-        }
         stage('Build') {
             steps {
                 sh "echo hello ${params.Build}"
