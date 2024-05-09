@@ -8,20 +8,27 @@ pipeline {
     }
 
     stages {
+        stage('checkout') {
+            steps { [
+                $class: 'GitSCM',
+                branches: 'main',
+                userRemoteConfigs: 'https://github.com/saurabh-kumar-coder/jenkins.git'
+            ]}
+        }
         stage('Build') {
             steps {
                 sh "echo hello ${params.Build}"
             }
-    }
+        }
         stage('Test') {
             steps {
                 sh "echo hello ${params.Test}"
             }
-}
+        }
         stage('Deploy') {
             steps {
                 sh "echo hello ${params.Deploy}"
             }
         }
-}
+    }
 }
