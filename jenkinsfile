@@ -11,7 +11,7 @@ pipeline {
             steps {
                 /* groovylint-disable-next-line GStringExpressionWithinString */
                 echo 'this is for branch checkout, the data should be come from new branch'
-                git branch: ${ params.Branch }, url: 'https://github.com/saurabh-kumar-coder/jenkins.git'
+                git branch: "${ params.Branch }", url: 'https://github.com/saurabh-kumar-coder/jenkins.git'
                 sh 'echo(checkout)'
             }
         }
