@@ -1,18 +1,14 @@
 pipeline {
     agent any
-
     parameters {
         string(name: 'Build', description: 'it is for building application', defaultValue: 'Build')
         string(name: 'Test', description: 'it is for Testing application', defaultValue: 'Test')
         string(name: 'Deploy', description: 'it is for deploying application', defaultValue: 'Deploy')
     }
-
     stages {
         stage('checkout') {
             steps {
-                $class: 'GitSCM',
-                branches: 'main',
-                userRemoteConfigs: 'https://github.com/saurabh-kumar-coder/jenkins.git'
+                git branch: 'main', url: 'https://github.com/saurabh-kumar-coder/jenkins.git'
             }
         }
         stage('Build') {
