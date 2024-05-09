@@ -10,7 +10,7 @@ pipeline {
         stage('checkout') {
             steps {
                 /* groovylint-disable-next-line GStringExpressionWithinString */
-                git branch: '${params.Branch}', url: 'https://github.com/saurabh-kumar-coder/jenkins.git'
+                git branch: ${ params.Branch }, url: 'https://github.com/saurabh-kumar-coder/jenkins.git'
                 sh 'echo("checkout")'
             }
         }
