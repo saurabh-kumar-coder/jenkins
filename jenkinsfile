@@ -9,11 +9,13 @@ pipeline {
 
     stages {
         stage('checkout') {
-            steps { [
+            steps {
+                [
                 $class: 'GitSCM',
                 branches: 'main',
                 userRemoteConfigs: 'https://github.com/saurabh-kumar-coder/jenkins.git'
-            ]}
+                ]
+            }
         }
         stage('Build') {
             steps {
